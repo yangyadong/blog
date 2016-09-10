@@ -1,0 +1,33 @@
+.form_text{
+    display: inline-block;
+    width: 100%;
+}
+.form-control{
+    display: inline-block;
+    width: 65%;
+}
+textarea{
+    resize: none;
+}
+input[type=number]{
+    width: 9%;
+}
+.add_apply{
+    margin-top: 1%;
+    margin-left: 80%;
+}
+.input-group{
+    display: inline-table;
+    width: 160px;
+}
+.title_label{
+    line-height: 34px;
+    margin-left: 9px;
+}
+#title,#acticle_type{
+    width: 88%;
+}
+.upload_img{
+    width: 93%;
+    margin-left: 3%;
+}

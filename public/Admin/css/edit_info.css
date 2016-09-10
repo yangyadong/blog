@@ -1,0 +1,36 @@
+.form_text,.form_textarea{
+    display: inline-block;
+    width: 100%;
+}
+.form_text_cell,.form_text_supervisor{
+    display: inline-block;
+    width: 49%;
+    float: left;
+}
+.form-control{
+    display: inline-block;
+    width: 86%;
+}
+.form-control-or{
+    width: 75%;
+}
+textarea{
+    resize: none;
+}
+input[type=number]{
+    width: 12%;
+}
+.add_apply{
+    margin-left: 80%;
+    margin-top: 1%;
+}
+.radio{
+    display: inline-block;
+}
+.input-group,#diplomas{
+    display: inline-table;
+    width: 75%;
+}
+.col-sm-2,.col-sm-1{
+    line-height: 34px;
+}
