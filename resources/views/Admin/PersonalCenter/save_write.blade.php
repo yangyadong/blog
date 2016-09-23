@@ -115,7 +115,7 @@
                                         <input style="display: none;" data-edit="inserttext" class="wysiwyg-voiceBtn" id="voiceBtn" x-webkit-speech="" type="text">
                                     </div>
                                     <div class="wysiwyg-editor" id="editor" contenteditable="true">
-                                        {{ $article->content }}
+                                        {!! $article->content !!}
                                     </div>
                                 </div>
                             </div>
