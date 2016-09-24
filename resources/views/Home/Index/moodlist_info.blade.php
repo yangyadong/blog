@@ -53,6 +53,7 @@
                         if(data.msg_code==0) {
                             $(".praise").html(praise+1);
                             that.addClass("heartAnimation").attr("rel","like");
+                            add_like_obj(articles_id);
                         }else{
                             alert('系统错误');
                         }
