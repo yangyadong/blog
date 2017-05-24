@@ -341,4 +341,17 @@
 @yield("script")
 </body>
 <!--  /Body -->
+<script>
+     (function () {
+         var a_list = $("#sidebar").find('a');
+         var baseurl = a_list[0].baseURI;
+         for (var i = 0;i<a_list.length;i++){
+             if (a_list[i].href == baseurl){
+                 $("#sidebar").find('a').eq(i).parents('li').addClass('open');
+                 $("#sidebar").find('a').eq(i).parent('li').toggleClass('open active');
+                 break;
+             }
+         }
+     }());
+</script>
 </html>
