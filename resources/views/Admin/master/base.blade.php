@@ -168,8 +168,8 @@
                                 </li>
                                 <!--Avatar Area-->
                                 <li class="edit">
-                                    <a href="{:U('Intruadit/edit_intro')}" class="pull-left">简介</a>
-                                    <a href="{:U('Intruadit/aditpsw')}" class="pull-right">修改密码</a>
+                                    <a href="{{url("Admin/edit_info")}}" class="pull-left">编辑资料</a>
+                                    <a href="{{url("Admin/edit_password")}}" class="pull-right">修改密码</a>
                                 </li>
 
                                 <li class="dropdown-footer">
@@ -197,12 +197,12 @@
             <!-- /Page Sidebar Header -->
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
-                <li>
-                    <a href={{url("Admin/index")}}>
-                        <i class="menu-icon glyphicon glyphicon-home"></i>
-                        <span class="menu-text"> 个人首页</span>
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a href={{url("Admin/index")}}>--}}
+                        {{--<i class="menu-icon glyphicon glyphicon-home"></i>--}}
+                        {{--<span class="menu-text"> 个人首页</span>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
                 <li>
                     <a href="#" class="menu-dropdown">
                         <i class="menu-icon fa fa-pencil-square-o"></i>
@@ -232,39 +232,39 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" class="menu-dropdown">
-                        <i class="menu-icon fa fa-pencil-square-o"></i>
-                        <span class="menu-text" id="mangers"> 我的资源 </span>
-                        <i class="menu-expand"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li>
-                            <a href={{url("Admin/my_resource")}}>
-                                <span class="menu-text">资源列表</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href={{url("Admin/update_resource")}}>
-                                <span class="menu-text">上传资源</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="menu-dropdown">
-                        <i class="menu-icon fa fa-pencil-square-o"></i>
-                        <span class="menu-text" id="mangers"> 事务处理 </span>
-                        <i class="menu-expand"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li>
-                            <a href={{url("Admin/rely")}}>
-                                <span class="menu-text">访客留言</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+                {{--<li>--}}
+                    {{--<a href="#" class="menu-dropdown">--}}
+                        {{--<i class="menu-icon fa fa-pencil-square-o"></i>--}}
+                        {{--<span class="menu-text" id="mangers"> 我的资源 </span>--}}
+                        {{--<i class="menu-expand"></i>--}}
+                    {{--</a>--}}
+                    {{--<ul class="submenu">--}}
+                        {{--<li>--}}
+                            {{--<a href={{url("Admin/my_resource")}}>--}}
+                                {{--<span class="menu-text">资源列表</span>--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                        {{--<li>--}}
+                            {{--<a href={{url("Admin/update_resource")}}>--}}
+                                {{--<span class="menu-text">上传资源</span>--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="#" class="menu-dropdown">--}}
+                        {{--<i class="menu-icon fa fa-pencil-square-o"></i>--}}
+                        {{--<span class="menu-text" id="mangers"> 事务处理 </span>--}}
+                        {{--<i class="menu-expand"></i>--}}
+                    {{--</a>--}}
+                    {{--<ul class="submenu">--}}
+                        {{--<li>--}}
+                            {{--<a href={{url("Admin/rely")}}>--}}
+                                {{--<span class="menu-text">访客留言</span>--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
                 <li>
                     <a href="#" class="menu-dropdown">
                         <i class="menu-icon fa fa-pencil-square-o"></i>

@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::group(['namespace' => 'Home'], function() {
+    Route::get('/', 'IndexController@index');//博客首页
     Route::get('/Home/index', 'IndexController@index');//博客首页
     Route::get('/Home/title_more', 'IndexController@title_page');//博客首页加载更多
     Route::get('/Home/about', 'IndexController@about');//关于我

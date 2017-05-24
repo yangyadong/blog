@@ -113,18 +113,18 @@
             <div class="loginbox-textbox">
                 <input type="password" maxlength="16" class="form-control" id="password" placeholder="Password" />
             </div>
-            <div class="loginbox-textbox">
-                <input type="text"  class="form-control" id="code" placeholder="请输入验证码" />
-            </div>
-            <div class="loginbox-textbox">
-                <img src="{{url("Admin/captcha")}}" onclick="this.src='{{url("Admin/captcha")}}'+'?'+Math.random()"
-                     text="点击更换" class="yazhengma" />
-                <a href="javascript:void(0);" onclick="$('.yazhengma').click();">看不清，换一张？</a>
-            </div>
+            {{--<div class="loginbox-textbox">--}}
+                {{--<input type="text"  class="form-control" id="code" placeholder="请输入验证码" />--}}
+            {{--</div>--}}
+            {{--<div class="loginbox-textbox">--}}
+                {{--<img src="{{url("Admin/captcha")}}" onclick="this.src='{{url("Admin/captcha")}}'+'?'+Math.random()"--}}
+                     {{--text="点击更换" class="yazhengma" />--}}
+                {{--<a href="javascript:void(0);" onclick="$('.yazhengma').click();">看不清，换一张？</a>--}}
+            {{--</div>--}}
             <div class="loginbox-submit">
                 <input type="button" class="btn btn-primary btn-block" id="login_click"value="Login">
                 <input type="hidden" id="_url" value="{{url("Admin/validator")}}" />
-                <input type="hidden" id="target_url" value={{url("Admin/index")}}>
+                <input type="hidden" id="target_url" value={{url("Admin/my_articles")}}>
                 {!! csrf_field() !!}
             </div>
         </form>
@@ -150,20 +150,20 @@
         $(this).attr("disabled",true);
         var account = $('#account').val();
         var password = $('#password').val();
-        var code = $('#code').val();
+        //var code = $('#code').val();
         var url = $('#_url').val();
         var _token = $("input[name='_token']") .val();
         if (account==''||password=='') {
             alert_info(2,"警告","用户名或密码不能为空");
-        }else if(code==''){
-            alert_info(2,"警告",'请输入验证码');
+//        }else if(code==''){
+//            alert_info(2,"警告",'请输入验证码');
         }else{
             $.post(
                     url,
                     {
                         account:account,
                         password:password,
-                        code:code,
+                        //code:code,
                         _token:_token
                     },
                     function(msg){

@@ -29,7 +29,7 @@
             Just about me
         </h2>
         <ul>
-            {{ $user->explain }}
+            {!! $user->explain !!}
         </ul>
     </div>
 @endsection

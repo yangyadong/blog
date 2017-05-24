@@ -19,7 +19,7 @@ class LoginController extends Controller
 
     //登录验证
     public function validator(Request $request){
-        if($request->input("code") == Session::get('phrase')){
+//        if($request->input("code") == Session::get('phrase')){
             $res = DB::table('admin')
                 ->where('account',$request->input("account"))
                 ->first();
@@ -35,9 +35,9 @@ class LoginController extends Controller
             }else{
                 return Controller::ajaxReturn(false,"账号或密码错误",1);
             }
-        }else{
-            return Controller::ajaxReturn(false,"验证码错误",1);
-        }
+//        }else{
+//            return Controller::ajaxReturn(false,"验证码错误",1);
+//        }
     }
 
     public function login_out(){
