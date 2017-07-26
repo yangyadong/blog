@@ -26,7 +26,7 @@
                     <span>分类：[<a href="/Home/knowledge?type_id={{ $vo->type_id }}">{{ $vo->type }}</a>]</span>
                 </p>
                 <figure><img src="{{ $vo->image }}"></figure>
-                <ul class="nlist" style="max-height: 200px;">
+                <ul class="nlist" style="max-height: 180px;">
                     <p>{!! $vo->content !!}</p>
                 </ul>
                 <a href="/Home/title_info?t_id={{ $vo->id }}" target="_blank" class="readmore">详细信息&gt;&gt;</a>

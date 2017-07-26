@@ -29,7 +29,7 @@ footer { text-align: center; line-height: 40px; border-top: #E8E8E8 1px solid ; 
     float: left;
     line-height: 1.9;
     overflow: hidden;
-    max-height: 120px;
+    max-height: 180px;
     word-wrap: break-word;
     text-align: justify;
 }
