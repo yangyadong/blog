@@ -1,4 +1,5 @@
 $(function(){
+    var ue = UE.getEditor('editor');
     $('.date-picker').datepicker();
 
     var diplomas = $("#diplomas").attr("diplomas");
@@ -22,7 +23,8 @@ $(function(){
         data.email = $("#email").val();
         data.birthplace = $("#birthplace").val();
         data.location = $("#location").val();
-        data.explain = $("#explain").val();
+        // data.explain = $("#explain").val();
+        data.explain = UE.getEditor('editor').getContent();
 
         if(!data.name || !data.signature || !data.diplomas || !data.school || !data.phone || !data.email || !data.birthplace || !data.location || !data.explain){
             alert_info(2,"警告","信息不完善");

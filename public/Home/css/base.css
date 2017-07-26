@@ -25,11 +25,12 @@ aside { width: 250px; }
 footer { text-align: center; line-height: 40px; border-top: #E8E8E8 1px solid ; width:1000px; margin:auto}
 .more{float: none !important;line-height: 20px;text-align: center; width: 10%; display: inline-block;  margin: 10px 40% 0 !important;}
 .nlist{
-    width: 530px;
+    width: 70%;
     float: left;
     line-height: 1.9;
     overflow: hidden;
     max-height: 120px;
     word-wrap: break-word;
+    text-align: justify;
 }
 

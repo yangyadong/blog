@@ -109,7 +109,11 @@
                             </div>
                             <div class="form_textarea form-group">
                                 <label for="explain" class="col-sm-1 control-label no-padding-right">个人说明：</label>
-                                <textarea class="form-control" name="explain" maxlength="225" rows="6" id="explain" placeholder="Default Text">{{$user_info->explain}}</textarea>
+                                <div class="form-control" style="height: inherit;">
+                                    <script name="explain" id="editor" type="text/plain"
+                                            style="width:100%;height:500px;">{!! $user_info->explain !!}</script>
+                                </div>
+                                {{--<textarea class="form-control" name="explain" maxlength="225" rows="6" id="explain" placeholder="Default Text">{{$user_info->explain}}</textarea>--}}
                             </div>
                             <input type="submit" class="add_apply btn btn-azure shiny" value="提交修改">
                             {!! csrf_field() !!}
@@ -122,6 +126,11 @@
 @endsection
 
 @section("script")
+
+    <script type="text/javascript" charset="utf-8" src="{{asset('ue')}}/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{asset('ue')}}/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="{{asset('ue')}}/lang/zh-cn/zh-cn.js"></script>
+
     <script src="{{asset('assets')}}/js/datetime/bootstrap-timepicker.js"></script>
     <script src="{{asset('assets')}}/js/datetime/bootstrap-datepicker.js"></script>
     <!--Bootstrap Date Range Picker-->
