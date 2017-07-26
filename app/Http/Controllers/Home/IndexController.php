@@ -125,6 +125,9 @@ class IndexController extends Controller
             ->where('ar.id','=',$title_id)
             ->select('ar.id','ar.praise','ar.name as title','ar.update_time','ar.image','ar.content','ad.name','at.name as type','at.id as type_id')
             ->first();
+        if (empty($article)){
+            return view('errors/404');
+        }
         $article_type = DB::table('article_type')->where('type',0)->select('id','name')->get();
         $new_title = DB::table('article as a')
             ->join('article_type as at','at.id','=','a.type')
@@ -158,6 +161,9 @@ class IndexController extends Controller
             ->where('ar.id','=',$title_id)
             ->select('ar.id','ar.praise','ar.name as title','ar.update_time','ar.image','ar.content','at.name as type','at.id as type_id')
             ->first();
+        if (empty($article)){
+            return view('errors/404');
+        }
         return view('Home/Index/moodlist_info')
             ->with('title_info',$article);
     }

@@ -21,7 +21,7 @@
     @yield('right_content')
 </article>
 <footer>
-    <p>Design by DanceSmile <a href="#">蜀ICP备11002373号-1</a> <a href="#">网站统计</a></p>
+    <p><a target="_blank" href="http://www.miitbeian.gov.cn">豫ICP备17029407号-1</a> <a href="#">网站统计</a></p>
 </footer>
 </body>
 <script type="text/javascript" src="/Home/js/jquery-2.0.3.min.js"></script>

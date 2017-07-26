@@ -15,7 +15,7 @@
         <a href="/Home/moodlist" class="n2">所思所悟</a>
     </h1>
     <div class="bloglist">
-        <ul class="arrow_box" style="text-align: center;">
+        <ul class="arrow_box" style="text-align: justify;">
             <div>
                 <p> {!! $title_info->content !!}</p>
             </div>
