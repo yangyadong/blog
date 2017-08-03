@@ -67,7 +67,7 @@
                         <div class="table-toolbar" style="position:absolute;padding: 0px;right: 60%;z-index: 999">
                             <div class="btn-group">
                                 <a type="button" class="btn btn-default" href="{{url("Admin/setting")}}">
-                                    <i class=""></i>写文章
+                                    <i class=""></i>添加分类
                                 </a>
                             </div>
                         </div>

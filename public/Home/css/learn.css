@@ -12,7 +12,7 @@ p.dateview span { margin: 0 10px 0 0 }
 p.dateview span a { color: #63B120 }
 .newblog figure { float: left; }
 .newblog figure img { width: 170px; border: #EAE6E7 1px solid; padding: 4px; }
-.nlist { width: 530px; float: left; margin: 0 0 0 10px; line-height: 1.9;overflow: hidden;max-height: inherit; }
+.nlist { width: 92%; float: left; margin: 0 0 0 10px; line-height: 1.9;overflow: hidden;max-height: inherit; }
 a.readmore { background: #f90; color: #fff; padding: 5px 10px; float: right; margin: 20px 5% 0 0 ;line-height: 1.9;}
 .line { overflow: hidden; width: 97%; height: 20px; border-bottom: 1px dashed #ccc; }
 .rank li { height: 25px; line-height: 25px; clear: both; padding-left: 5px; overflow: hidden; padding-left: 15px; background: url(../image/li.jpg) no-repeat left center; }
