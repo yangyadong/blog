@@ -6,7 +6,6 @@
     @yield('title')
     <link href="/Home/css/base.css" rel="stylesheet">
     @yield('style')
-    <link href="{{asset('/assets')}}/css/bootstrap.min.css" rel="stylesheet"/>
     <!--[if lt IE 9]>
     <script src="/Home/js/modernizr.js"></script>
     <![endif]-->
