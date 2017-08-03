@@ -6,6 +6,7 @@
 
 @section('style')
     <link href="/Home/css/learn.css" rel="stylesheet">
+    <link href="{{asset('/assets')}}/css/bootstrap.min.css" rel="stylesheet"/>
 @endsection
 
 @section('content_head')
