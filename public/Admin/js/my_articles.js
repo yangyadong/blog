@@ -14,7 +14,8 @@ $(function(){
                     "sPrevious": "Prev",
                     "sNext": "Next"
                 }
-            }
+            },
+	    "ordering":false,
         });
         return table;
     }

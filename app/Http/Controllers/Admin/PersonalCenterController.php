@@ -83,6 +83,7 @@ class PersonalCenterController extends Controller
             ->join('admin as ad', 'ad.id', '=', 'a.admin_id')
             ->where($where)
             ->select("ad.name","a.id","a.name as title","a.update_time","a.status","a.image")
+	    ->orderBy('a.update_time','desc')
             ->get();
         foreach($article as $key => $value){
             $value->update_time = date("Y-m-d H:i:s",$value->update_time);

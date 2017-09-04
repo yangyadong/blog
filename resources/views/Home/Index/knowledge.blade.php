@@ -104,7 +104,7 @@
                                             +'</span><span>分类：[<a href="/Home/knowledge?type_id='+data[i]["type_id"]
                                             +'">'+data[i]["type"]+'</a>]</span></p>'
                                             +'<figure><img src="'+data[i]["image"]+'"></figure>'
-                                            +'<ul class="nlist"><p>'+data[i]["content"]
+                                            +'<ul class="nlist" style="max-height:180px;width:70%;"><p>'+data[i]["content"]
                                             +'</p></ul>'
                                             +'<a href="/Home/title_info?t_id='+data[i]["id"]+'" target="_blank" class="readmore">详细信息&gt;&gt;</a></div>'
                                             +'<div class="line"></div>';

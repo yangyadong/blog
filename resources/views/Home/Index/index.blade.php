@@ -94,6 +94,7 @@
             </h3>
             <ul class="website">
                 <li><a href="/">个人博客</a></li>
+		                <li><a target="_blank" href="http://blog.csdn.net/yadong_word">我的CSDN</a></li>
             </ul>
         </div>
         <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
