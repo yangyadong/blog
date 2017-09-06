@@ -51,7 +51,7 @@
             <p>学校：{{ $user->school }}</p>
             <p>职业：PHP开发</p>
             <p>所在地：{{ $user->location }}</p>
-            <img class="about_photo" src="/Home/image/aboutphoto.jpg">
+            <img style='margin-top:30px;height:199px;' class="about_photo" src="/Home/image/aboutphoto.jpg">
         </div>
     </aside>
 @endsection

@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="杨亚东,个人博客,个人网站,博客,左眼,左眼博客,左眼@博客,杨亚东的博客,杨亚东左眼博客">
+    <meta name="description" content="杨亚东的个人网站，主要介绍我的学习经验、情感随笔、联系方式、希望与大家沟通学习">
     <meta name="_token" content="{{ csrf_token() }}" />
     @yield('title')
     <link href="/Home/css/base.css" rel="stylesheet">
